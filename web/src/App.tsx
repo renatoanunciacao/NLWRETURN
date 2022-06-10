@@ -1,5 +1,13 @@
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 import { Widget } from "./components/Widget";
 
 export function App() {
-  return <Widget />;
+  return (
+    <>
+      <Header />
+      <Widget />
+      <Footer />
+    </>
+  );
 }
