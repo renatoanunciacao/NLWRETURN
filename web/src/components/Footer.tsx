@@ -8,7 +8,7 @@ export function Footer() {
              bottom-0
              p-4 "
     >
-      &copy; Todos os direitos reservados.</a>.
+      &copy; Todos os direitos reservados.
     </footer>
   );
 }
