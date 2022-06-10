@@ -1,10 +1,11 @@
 import express from "express";
 import { prisma } from "./prisma";
+import cors from "cors";
 
 const app = express();
 
 app.use(express.json());
-
+app.use(cors());
 app.post("/feedbacks", async (req, res) => {
   const { type, comment, screenshot } = req.body;
   const result = await prisma.feedback.create({
