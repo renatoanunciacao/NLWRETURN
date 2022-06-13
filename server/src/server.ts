@@ -24,6 +24,6 @@ app.get("/feedbacks", async (req, res) => {
   return res.status(200).json(result);
 });
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
   console.log("Server Running");
 });
