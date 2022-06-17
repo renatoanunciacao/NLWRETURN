@@ -1,11 +1,11 @@
+import { CardsFeedbacks } from "./components/CardsFeedbacks";
 import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
 import { Widget } from "./components/Widget";
 
 export function App() {
   return (
     <>
-      <Header />
+      <CardsFeedbacks />
       <Widget />
       <Footer />
     </>
