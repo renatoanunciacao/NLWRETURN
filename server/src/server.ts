@@ -24,6 +24,15 @@ app.get("/feedbacks", async (req, res) => {
   return res.status(200).json(result);
 });
 
+app.delete("/feedbacks/:id", async (req, res) => {
+  const result = await prisma.feedback.delete({
+    where: {
+      id: req.params.id,
+    },
+  });
+  return res.status(202).json(result);
+});
+
 app.listen(process.env.PORT || 3333, () => {
   console.log("Server Running");
 });
