@@ -1,3 +1,4 @@
+import { Trash } from "phosphor-react";
 import { useEffect, useState } from "react";
 import { api } from "../lib/api";
 

@@ -30,6 +30,7 @@ app.delete("/feedbacks/:id", async (req, res) => {
       id: req.params.id,
     },
   });
+
   return res.status(202).json(result);
 });
 
